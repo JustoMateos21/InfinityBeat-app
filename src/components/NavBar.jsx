@@ -44,8 +44,8 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen top-2 flex fixed h-20  border border-x-cyan-100 rounded-[40px] ${
-        menuOpen && "flex-col h-full"
+      className={`w-screen top-2 flex fixed h-20 duration-150 border border-x-cyan-100 rounded-[40px] ${
+        menuOpen && "flex-col h-full  bg-[#000530]"
       }`}
     >
       <div
