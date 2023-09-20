@@ -56,6 +56,7 @@ const NavBar = () => {
         {!menuOpen && windowDimension.innerWidth < 700 ? (
           <AiOutlineMenu
             size={30}
+            color="#fff"
             onClick={() => setMenuOpen(true)}
             cursor={"pointer"}
           />
@@ -64,12 +65,13 @@ const NavBar = () => {
           windowDimension.innerWidth < 700 && (
             <AiOutlineClose
               size={30}
+              color="#fff"
               cursor={"pointer"}
               onClick={() => setMenuOpen(false)}
             />
           )
         )}
-        <Link className={`text-lg text-black ${menuOpen ? "pl-10" : "pl-40"}`}>
+        <Link className={`text-lg text-white ${menuOpen ? "pl-10" : "pl-40"}`}>
           InfinityBeat
         </Link>
       </div>
@@ -82,7 +84,11 @@ const NavBar = () => {
       >
         {linksToRender.map((l) => (
           <Link
-            className={!menuOpen ? "cursor-pointer" : "pt-36 text-2xl"}
+            className={
+              !menuOpen
+                ? "cursor-pointer text-white"
+                : "pt-36 text-2xl text-white"
+            }
             key={l.id}
             to={l.src}
           >
