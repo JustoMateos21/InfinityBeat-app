@@ -71,7 +71,12 @@ const NavBar = () => {
             />
           )
         )}
-        <Link className={`text-lg text-white ${menuOpen ? "pl-10" : "pl-40"}`}>
+        <Link
+          to="Home"
+          className={`text-lg cursor-pointer  text-white ${
+            menuOpen ? "pl-10" : "pl-40"
+          }`}
+        >
           InfinityBeat
         </Link>
       </div>
@@ -86,8 +91,8 @@ const NavBar = () => {
           <Link
             className={
               !menuOpen
-                ? "cursor-pointer text-white"
-                : "pt-36 text-2xl text-white"
+                ? "cursor-pointer text-white hover:text-xl duration-200"
+                : "pt-36 text-2xl cursor-pointer text-white hover:text-3xl duration-200"
             }
             key={l.id}
             to={l.src}

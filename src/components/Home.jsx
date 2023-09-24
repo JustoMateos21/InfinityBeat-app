@@ -2,7 +2,10 @@ import React from "react";
 import headphones1 from "../assets/headphones1.png";
 const Home = () => {
   return (
-    <div className="pt-20 sm:grid-cols-1 h-screen w-screen grid grid-rows-2 grid-cols-2  bg-[#000530]">
+    <div
+      name="Home"
+      className="pt-20 sm:grid-cols-1 h-screen w-screen grid grid-rows-2 grid-cols-2  bg-[#000530]"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="bg-[#67CC95] p-3  pl-4 pr-4 flex items-center justify-center rounded-md">
           <p className="text-white">New!</p>

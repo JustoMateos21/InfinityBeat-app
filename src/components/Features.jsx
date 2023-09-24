@@ -33,7 +33,10 @@ const Features = () => {
   ];
 
   return (
-    <div className=" bg-[#000530] grid grid-cols-2 sm:grid-cols-1 grid-rows-2 pt-20">
+    <div
+      name="Features"
+      className=" bg-[#000530] grid grid-cols-2 sm:grid-cols-1 grid-rows-2 pt-20"
+    >
       <div className="flex p-4 overflow-hidden">
         <img src={headphones2} alt="" className=" object-contain" />
       </div>
